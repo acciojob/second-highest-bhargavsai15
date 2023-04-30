@@ -11,7 +11,9 @@
 		function secondHighest(arr) {
 			//Write your code here
       arr.sort();
-      
+      if(arr.length==1){
+        return arr[0];
+      }
       return arr[arr.length-2];
 		}
 
@@ -22,11 +24,10 @@
 				arr[i] = prompt("Enter element " + (i+1));
 			}
 			alert(secondHighest(arr));
-		}
+		} 
 		Main();
 	</script>
-
-    <script type="text/javascript" src="./script.js">
+ 
 </script>
 
 </body>
